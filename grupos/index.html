@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensão IFSP | Tecnologia e Inovação</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="navbar glass-effect">
+        <div class="nav-content">
+            <div class="logo-area">
+                <img src="assets/images/logo-ifsp.jpg" alt="IFSP Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">IFSP <span class="highlight">Guarulhos</span></span>
+                    <span class="logo-subtitle">Engenharia de Computação</span>
+                </div>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#hero" class="nav-item">Início</a>
+                <a href="#about" class="nav-item">O Projeto</a>
+                <a href="#technologies" class="nav-item">Tecnologias</a>
+                <a href="#team" class="nav-item">Equipe</a>
+                <a href="demandante.html" class="nav-item btn-demandante">
+                    Demandante <i class="ph ph-arrow-right"></i>
+                </a>
+            </nav>
+
+            <div class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="status-badge">Outubro 2025 • Sala do Futuro</span>
+                </div>
+                
+                <h1 id="typing-title" class="glitch-text"></h1>
+                
+                <p class="hero-description">
+                    Universitários e educadores unidos para transformar o ensino através da programação criativa e lógica computacional.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#about" class="btn-primary">Saiba Mais</a>
+                    <a href="demandante.html" class="btn-secondary">
+                        <i class="ph ph-user-focus"></i> Ver Demandante
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-body">
+                        <code id="code-snippet">
+                            </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-heading">Nossa <span class="highlight">Missão</span>_</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Nosso desafio foi levar o pensamento computacional para a <strong>Sala do Futuro</strong>. 
+                            Como alunos de Engenharia, assumimos o papel de mentores, ensinando lógica de programação 
+                            para professores da rede estadual.
+                        </p>
+                        <div class="quote-box">
+                            <i class="ph ph-quotes"></i>
+                            <p>"O conhecimento se multiplica quando é compartilhado."</p>
+                        </div>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/grupo-foto.jpeg" alt="Equipe IFSP e Professores" class="group-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies" class="section-padding bg-darker">
+            <div class="container">
+                <h2 class="section-heading">Stack <span class="highlight">Ensinada</span>_</h2>
+                <div id="tech-grid" class="tech-grid"></div>
+            </div>
+        </section>
+
+        <section id="team" class="section-padding">
+            <div class="container">
+                <h2 class="section-heading">Squad <span class="highlight">IFSP</span>_</h2>
+                <div id="members-grid" class="members-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>IFSP_Extensão_2025</span>
+            </div>
+            <p>Desenvolvido pelos alunos de Engenharia de Computação.</p>
+            <div class="social-links">
+                <a href="#"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.instagram.com/p/DPTwCNNjdce/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
