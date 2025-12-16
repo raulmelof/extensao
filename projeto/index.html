@@ -20,6 +20,43 @@
             padding-left: 20px;
             margin-bottom: 40px;
         }
+
+        /* Novos Cards dos Demandantes */
+        .requesters-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .requester-card {
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .requester-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .requester-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+            padding: 3px;
+            background-clip: content-box;
+        }
         
         .video-terminal {
             background: #000;
@@ -135,7 +172,7 @@
             <div class="logo-area">
                 <div class="logo-text">
                     <span class="logo-title">DOSSIÊ <span class="highlight">DEMANDANTE</span></span>
-                    <span class="logo-subtitle">Navegação do Sistema</span>
+                    <span class="logo-subtitle">Projeto de Extensão 2025</span>
                 </div>
             </div>
             
@@ -151,11 +188,33 @@
         <div class="container">
             
             <section class="mission-header">
-                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Perfil do Solicitante</h1>
-                <p style="color: var(--text-muted); font-size: 1.1rem;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Perfil dos Solicitantes</h1>
+                
+                <div class="requesters-container">
+                    <div class="requester-card">
+                        <img src="../assets/images/marcelo.jpeg" alt="Marcelo Silva" class="requester-photo" onerror="this.src='https://via.placeholder.com/80?text=MS'">
+                        <div>
+                            <h3 style="margin: 0; color: #fff; font-size: 1.1rem;">Marcelo Silva</h3>
+                            <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+                                PEC na Diretoria de Ensino<br>Guarulhos Sul
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="requester-card">
+                        <img src="../assets/images/elaine.jpg" alt="Elaine Ferreira" class="requester-photo" onerror="this.src='https://via.placeholder.com/80?text=EF'">
+                        <div>
+                            <h3 style="margin: 0; color: #fff; font-size: 1.1rem;">Elaine Ferreira</h3>
+                            <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+                                PEC de Tecnologia na Diretoria<br>de Ensino Guarulhos Sul
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 20px;">
                     <strong>Organização:</strong> Sala do Futuro / Governo de SP<br>
-                    <strong>Responsáveis:</strong> <span class="highlight">Nome Fictício 1</span> e <span class="highlight">Nome Fictício 2</span>.<br>
-                    <strong>Foco:</strong> Conteúdo do 4º Bimestre (Tecnologia e Inovação).<br>
+                    <strong>Foco:</strong> Conteúdo do 4º Bimestre (Tecnologia e Inovação).
                 </p>
             </section>
 
