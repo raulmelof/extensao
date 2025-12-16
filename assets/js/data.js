@@ -45,7 +45,7 @@ def verificar_evento(total, convidados):
     team: [
         {
             name: "Raul Melo Farias",
-            role: "Scrum Master & Desenvolvedor",
+            role: "Scrum Master & Apresentador & Desenvolvedor",
             avatar: "../assets/images/avatar1.jpeg",
             github: "https://github.com/raulmelof"
         },
