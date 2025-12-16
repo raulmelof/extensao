@@ -11,7 +11,7 @@
     
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
     <header class="navbar glass-effect">
         <div class="nav-content">
             <div class="logo-area">
-                <img src="assets/images/logo-ifsp.jpg" alt="IFSP Logo" class="logo-img">
+                <img src="../assets/images/logo-ifsp.png" alt="IFSP Logo" class="logo-img" onerror="this.style.display='none'">
                 <div class="logo-text">
                     <span class="logo-title">IFSP <span class="highlight">Guarulhos</span></span>
                     <span class="logo-subtitle">Engenharia de Computação</span>
@@ -32,9 +32,11 @@
                 <a href="#about" class="nav-item">O Projeto</a>
                 <a href="#technologies" class="nav-item">Tecnologias</a>
                 <a href="#team" class="nav-item">Equipe</a>
-                <a href="demandante.html" class="nav-item btn-demandante">
-                    Demandante <i class="ph ph-arrow-right"></i>
-                </a>
+                
+                <span style="color: #444; margin: 0 10px;">|</span>
+
+                <a href="../projeto/index.html" class="nav-item">Dossiê</a>
+                <a href="../encerra/index.html" class="nav-item">Solução</a>
             </nav>
 
             <div class="mobile-menu-btn">
@@ -95,7 +97,7 @@
                         </div>
                     </div>
                     <div class="about-image-wrapper">
-                        <img src="assets/images/grupo-foto.jpeg" alt="Equipe IFSP e Professores" class="group-photo">
+                        <img src="../assets/images/grupo-foto.jpeg" alt="Equipe IFSP e Professores" class="group-photo">
                         <div class="photo-overlay"></div>
                     </div>
                 </div>
@@ -124,13 +126,13 @@
             </div>
             <p>Desenvolvido pelos alunos de Engenharia de Computação.</p>
             <div class="social-links">
-                <a href="#"><i class="ph ph-github-logo"></i></a>
+                <a href="https://github.com/raulmelof/extensao"><i class="ph ph-github-logo"></i></a>
                 <a href="https://www.instagram.com/p/DPTwCNNjdce/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

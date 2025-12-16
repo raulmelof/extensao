@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Final | Soluções Desenvolvidas</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Estilos exclusivos para os Demos Interativos */
+        .demo-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 80px;
+        }
+
+        /* Área de Código (Visual apenas) */
+        .code-block {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #d4d4d4;
+            border-left: 3px solid var(--primary);
+            overflow-x: auto;
+        }
+        .kw { color: #569cd6; } /* Keywords */
+        .str { color: #ce9178; } /* Strings */
+        .func { color: #dcdcaa; } /* Functions */
+        .var { color: #9cdcfe; } /* Variables */
+
+        /* Área Interativa (Funcional) */
+        .live-app {
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+
+        .custom-input {
+            width: 100%;
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+        }
+
+        .custom-input:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .btn-run {
+            background: var(--primary);
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-run:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .console-output {
+            background: #000;
+            border: 1px solid #333;
+            padding: 15px;
+            margin-top: 20px;
+            font-family: 'Fira Code', monospace;
+            min-height: 80px;
+            color: #fff;
+        }
+
+        .log-line {
+            display: block;
+            margin-bottom: 5px;
+            border-bottom: 1px dashed #333;
+        }
+
+        .result-success { color: var(--primary); }
+        .result-error { color: var(--secondary); }
+
+        @media (max-width: 768px) {
+            .demo-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar glass-effect">
+        <div class="nav-content">
+            <div class="logo-area">
+                <div class="logo-text">
+                    <span class="logo-title">SISTEMA <span class="highlight">FINAL</span></span>
+                    <span class="logo-subtitle">Navegação do Sistema</span>
+                </div>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="../grupos/index.html" class="nav-item">Grupo (Home)</a>
+                <a href="../projeto/index.html" class="nav-item">Dossiê</a>
+                <a href="#" class="nav-item active" style="color: var(--primary); border-bottom: 2px solid var(--primary);">Solução Final</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section-padding" style="margin-top: 60px;">
+        <div class="container">
+            
+            <section style="text-align: center; margin-bottom: 60px;">
+                <h1 style="font-size: 2.5rem;">Soluções Operacionais</h1>
+                <p class="hero-description" style="margin: 0 auto;">
+                    Abaixo você encontra a implementação funcional dos desafios de lógica solicitados para o 4º Bimestre.
+                    Utilize os painéis à direita para testar os algoritmos em tempo real.
+                </p>
+            </section>
+
+            <h2 class="section-heading">01. Módulo de <span class="highlight">Soletração (p5.js)</span></h2>
+            <div class="demo-container">
+                
+                <div class="code-block">
+                    <div style="margin-bottom: 10px; color: #666;">// Código p5.js Original</div>
+                    <span class="kw">function</span> <span class="func">codifica</span>(<span class="var">palavra</span>) {<br>
+                    &nbsp;&nbsp;<span class="kw">for</span> (<span class="kw">let</span> <span class="var">caractere</span> <span class="kw">of</span> <span class="var">palavra</span>) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">console</span>.<span class="func">log</span>(<span class="var">caractere</span>);<br>
+                    &nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;<span class="kw">return</span> <span class="str">"Processamento Concluído"</span>;<br>
+                    }
+                </div>
+
+                <div class="live-app">
+                    <div class="app-header">
+                        <span><i class="ph ph-terminal-window"></i> Live Preview</span>
+                        <span style="color: var(--primary)">● Online</span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Digite uma palavra:</label>
+                        <input type="text" id="p5-input" class="custom-input" placeholder="Ex: ROBOTICA">
+                    </div>
+                    <button onclick="runSpelling()" class="btn-run">EXECUTAR CÓDIGO</button>
+
+                    <div class="console-output" id="p5-console">
+                        <span style="color: #666;">> Aguardando entrada...</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="section-heading">02. Gestão de <span class="highlight">Eventos (Python)</span></h2>
+            <div class="demo-container">
+                
+                <div class="code-block">
+                    <div style="margin-bottom: 10px; color: #666;"># Código Python Original</div>
+                    <span class="var">total</span> = alunos + monitores + convidados<br><br>
+                    <span class="kw">if</span> <span class="var">total</span> <= 100 <span class="kw">and</span> <span class="var">convidados</span> <= 20:<br>
+                    &nbsp;&nbsp;<span class="func">print</span>(<span class="str">"Evento Aprovado!"</span>)<br>
+                    <span class="kw">else</span>:<br>
+                    &nbsp;&nbsp;<span class="func">print</span>(<span class="str">"Capacidade Excedida."</span>)
+                </div>
+
+                <div class="live-app">
+                    <div class="app-header">
+                        <span><i class="ph ph-code"></i> Python Runner</span>
+                        <span style="color: var(--primary)">● Online</span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Qtd. Alunos:</label>
+                        <input type="number" id="py-alunos" class="custom-input" value="80">
+                    </div>
+                    <div class="input-group">
+                        <label>Qtd. Monitores:</label>
+                        <input type="number" id="py-monitores" class="custom-input" value="5">
+                    </div>
+                    <div class="input-group">
+                        <label>Qtd. Convidados (Max 20):</label>
+                        <input type="number" id="py-convidados" class="custom-input" value="10">
+                    </div>
+
+                    <button onclick="runPythonCheck()" class="btn-run">VERIFICAR REGRAS</button>
+
+                    <div class="console-output" id="py-console">
+                        <span style="color: #666;">> Sistema pronto.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; margin-top: 50px; text-align: center;">
+                <h3 style="margin-bottom: 15px; color: var(--text-muted);">🚧 Roadmap Futuro: Integração de Hardware</h3>
+                <p style="max-width: 700px; margin: 0 auto; color: #888;">
+                    Os módulos de integração física com <strong>Micro:bit</strong> e sensores foram mapeados no cronograma inicial, 
+                    mas transferidos para a próxima fase do projeto de extensão para garantir a estabilidade dos módulos de software acima.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer style="margin-top: 80px;">
+        <div class="footer-content" style="justify-content: center;">
+            <p>Projeto Encerrado - IFSP Guarulhos 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Função para o Demo p5.js (Soletrar)
+        function runSpelling() {
+            const input = document.getElementById('p5-input').value;
+            const consoleDiv = document.getElementById('p5-console');
+            
+            if (!input) {
+                consoleDiv.innerHTML = '<span class="result-error">> Erro: Digite uma palavra.</span>';
+                return;
+            }
+
+            consoleDiv.innerHTML = '<span style="color: #ffff00">> Iniciando loop...</span><br>';
+            
+            // Simula o loop com um pequeno delay visual
+            let i = 0;
+            consoleDiv.innerHTML += '<div id="typing-area"></div>';
+            const area = document.getElementById('typing-area');
+
+            function typeLoop() {
+                if (i < input.length) {
+                    area.innerHTML += `<span class="log-line">> Letra: <strong>${input[i].toUpperCase()}</strong></span>`;
+                    i++;
+                    setTimeout(typeLoop, 300); // Delay de 300ms entre letras
+                } else {
+                    area.innerHTML += '<br><span class="result-success">> Processamento Concluído!</span>';
+                }
+            }
+            typeLoop();
+        }
+
+        // Função para o Demo Python (Ingressos)
+        function runPythonCheck() {
+            const alunos = parseInt(document.getElementById('py-alunos').value) || 0;
+            const monitores = parseInt(document.getElementById('py-monitores').value) || 0;
+            const convidados = parseInt(document.getElementById('py-convidados').value) || 0;
+            const consoleDiv = document.getElementById('py-console');
+
+            const total = alunos + monitores + convidados;
+            
+            let outputHTML = `> Calculando Total: ${alunos} + ${monitores} + ${convidados} = <strong>${total}</strong><br>`;
+
+            // Regras do PDF
+            const limiteTotal = 100;
+            const limiteConvidados = 20;
+
+            if (total <= limiteTotal && convidados <= limiteConvidados) {
+                outputHTML += `<span class="result-success">> [SUCESSO] Evento Aprovado!</span><br>`;
+                outputHTML += `<small style="color:#666">Todas as regras foram respeitadas.</small>`;
+            } else {
+                outputHTML += `<span class="result-error">> [ERRO] Capacidade Excedida.</span><br>`;
+                if (total > limiteTotal) outputHTML += `- Total de pessoas (${total}) maior que 100.<br>`;
+                if (convidados > limiteConvidados) outputHTML += `- Convidados (${convidados}) maior que 20.<br>`;
+            }
+
+            consoleDiv.innerHTML = outputHTML;
+        }
+    </script>
+</body>
+</html>

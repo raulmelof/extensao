@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiê do Demandante | IFSP Extensão</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        /* Estilos exclusivos desta página */
+        .mission-header {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .video-terminal {
+            background: #000;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .checklist-console {
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+            font-family: var(--font-code);
+            border: 1px solid rgba(46, 204, 113, 0.2);
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #333;
+        }
+
+        /* Estilo para item entregue */
+        .check-box.done {
+            min-width: 24px;
+            height: 24px;
+            border: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Estilo para item NÃO entregue */
+        .check-box.pending {
+            min-width: 24px;
+            height: 24px;
+            border: 2px solid #e74c3c; /* Vermelho */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .status-verified {
+            color: var(--primary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: auto;
+        }
+
+        .status-pending {
+            color: #e74c3c;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: auto;
+        }
+
+        .btn-final-project {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            width: 100%;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-family: var(--font-code);
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn-final-project:hover {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 0 30px rgba(46, 204, 113, 0.4);
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar glass-effect">
+        <div class="nav-content">
+            <div class="logo-area">
+                <div class="logo-text">
+                    <span class="logo-title">DOSSIÊ <span class="highlight">DEMANDANTE</span></span>
+                    <span class="logo-subtitle">Navegação do Sistema</span>
+                </div>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="../grupos/index.html" class="nav-item">Grupo (Home)</a>
+                <a href="#" class="nav-item active" style="color: var(--primary); border-bottom: 2px solid var(--primary);">Dossiê</a>
+                <a href="../encerra/index.html" class="nav-item">Solução Final</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section-padding" style="margin-top: 60px;">
+        <div class="container">
+            
+            <section class="mission-header">
+                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Perfil do Solicitante</h1>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">
+                    <strong>Organização:</strong> Sala do Futuro / Governo de SP<br>
+                    <strong>Responsáveis:</strong> <span class="highlight">Nome Fictício 1</span> e <span class="highlight">Nome Fictício 2</span>.<br>
+                    <strong>Foco:</strong> Conteúdo do 4º Bimestre (Tecnologia e Inovação).<br>
+                </p>
+            </section>
+
+            <div class="about-grid">
+                <div>
+                    <h2 class="section-heading">01. O <span class="highlight">Desafio</span></h2>
+                    <p class="hero-description">
+                        O projeto foi reajustado para focar nas dificuldades reais dos professores com o currículo do 4º Bimestre.
+                        A demanda principal foi sair da teoria e aplicar desafios práticos de programação textual.
+                    </p>
+                    <div class="quote-box">
+                        <p>"É a partir do p5.js e Python que conseguimos pensar e caminhar no que será proposto para o futuro..."</p>
+                    </div>
+                </div>
+
+                <div class="video-terminal">
+                    <div class="window-header" style="margin-bottom: 10px; font-size: 0.8rem; color: #555;">
+                        ● VÍDEO 1: SOLICITAÇÃO INICIAL
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/watch?v=dtKyqvn640E" title="Vídeo do Pedido" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #333; margin: 60px 0;">
+
+            <h2 class="section-heading">02. Status da <span class="highlight">Execução</span></h2>
+            <div class="checklist-console">
+                
+                <div class="check-item">
+                    <div class="check-box done">✓</div>
+                    <div>
+                        <h3 style="margin-bottom: 5px;">JavaScript & p5.js (4º Bimestre)</h3>
+                        <p style="font-size: 0.9rem; color: #888;">
+                            Desafio 1: Manipulação de strings e loops (Soletração).
+                        </p>
+                    </div>
+                    <div class="status-verified">Entregue</div>
+                </div>
+
+                <div class="check-item">
+                    <div class="check-box done">✓</div>
+                    <div>
+                        <h3 style="margin-bottom: 5px;">Lógica com Python</h3>
+                        <p style="font-size: 0.9rem; color: #888;">
+                            Desafio Bônus: Sistema de gestão de ingressos com condicionais.
+                        </p>
+                    </div>
+                    <div class="status-verified">Entregue</div>
+                </div>
+
+                <div class="check-item">
+                    <div class="check-box pending">!</div>
+                    <div>
+                        <h3 style="margin-bottom: 5px; color: #e74c3c;">Robótica com Micro:bit</h3>
+                        <p style="font-size: 0.9rem; color: #888;">
+                            Integração física e sensores. Não abordado devido ao tempo disponível.
+                        </p>
+                    </div>
+                    <div class="status-pending">Adiado</div>
+                </div>
+
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #333; margin: 60px 0;">
+
+            <div class="about-grid" style="direction: rtl;">
+                <div style="direction: ltr;">
+                    <h2 class="section-heading">03. A <span class="highlight">Conclusão</span></h2>
+                    <p class="hero-description">
+                        Vídeo final onde o demandante valida as entregas dos desafios de código e comenta sobre os pontos que ficarão para uma próxima etapa.
+                    </p>
+                </div>
+
+                <div class="video-terminal" style="direction: ltr;">
+                    <div class="window-header" style="margin-bottom: 10px; font-size: 0.8rem; color: var(--primary);">
+                        ● VÍDEO 2: VALIDAÇÃO E FEEDBACK
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_2" title="Vídeo de Feedback" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../encerra/index.html" class="btn-final-project">
+                &lt; Ver Desafios Resolvidos /&gt;
+            </a>
+
+        </div>
+    </main>
+
+    <footer style="margin-top: 80px;">
+        <div class="footer-content" style="justify-content: center;">
+            <p>Engenharia de Computação - IFSP Guarulhos</p>
+        </div>
+    </footer>
+
+</body>
+</html>

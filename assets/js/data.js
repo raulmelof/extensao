@@ -46,31 +46,31 @@ def verificar_evento(total, convidados):
         {
             name: "Raul Melo Farias",
             role: "Scrum Master & Desenvolvedor",
-            avatar: "assets/images/avatar1.jpeg",
+            avatar: "../assets/images/avatar1.jpeg",
             github: "https://github.com/raulmelof"
         },
         {
             name: "Arthur Vieira Xavier Pascoal",
             role: "Apresentador & Desenvolvedor",
-            avatar: "assets/images/avatar2.jpeg",
+            avatar: "../assets/images/avatar2.jpeg",
             github: "#"
         },
         {
             name: "Jonathan Zorzim Rodrigues",
             role: "Apresentador & Desenvolvedor",
-            avatar: "assets/images/avatar3.jpeg",
+            avatar: "../assets/images/avatar3.jpeg",
             github: "#"
         },
         {
             name: "Bryan Ferreira Barboza",
             role: "Apresentador & Desenvolvedor",
-            avatar: "assets/images/avatar4.jpeg",
+            avatar: "../assets/images/avatar4.jpeg",
             github: "#"
         },
         {
             name: "Gabriel Vinícius Santos Rosa",
             role: "Apresentador & Desenvolvedor",
-            avatar: "assets/images/avatar5.jpeg",
+            avatar: "../assets/images/avatar5.jpeg",
             github: "#"
         },
         // Adicione mais blocos {} se tiver mais gente
