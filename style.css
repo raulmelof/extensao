@@ -357,6 +357,18 @@ h1#typing-title {
     left: 0;
 }
 
+.blink {
+    animation: blink 1s step-end infinite;
+    color: var(--primary); /* Garante que o cursor seja verde */
+    font-weight: bold;
+}
+
+/* Caso a animação blink não esteja definida ainda, garanta que ela exista: */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 /* Grid Sobre */
 .about-grid {
     display: grid;
