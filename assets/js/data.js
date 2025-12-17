@@ -65,13 +65,13 @@ def verificar_evento(total, convidados):
             name: "Bryan Ferreira Barboza",
             role: "Apresentador & Desenvolvedor",
             avatar: "../assets/images/avatar4.jpeg",
-            github: "#"
+            github: "https://github.com/scarletsorceress"
         },
         {
             name: "Gabriel Vinícius Santos Rosa",
             role: "Apresentador & Desenvolvedor",
             avatar: "../assets/images/avatar5.jpeg",
-            github: "#"
+            github: "https://github.com/Gabrielvi05"
         },
         // Adicione mais blocos {} se tiver mais gente
     ]
