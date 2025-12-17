@@ -59,7 +59,7 @@ def verificar_evento(total, convidados):
             name: "Jonathan Zorzim Rodrigues",
             role: "Apresentador & Desenvolvedor",
             avatar: "../assets/images/avatar3.jpeg",
-            github: "#"
+            github: "https://github.com/Cecchino9"
         },
         {
             name: "Bryan Ferreira Barboza",
